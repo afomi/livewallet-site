@@ -41,6 +41,7 @@ jobs:
         JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
         JEKYLL_ENV: production
         NODE_ENV: production
+        GOOGLE_ANALYTICS_CODE: ${{ secrets.GOOGLE_ANALYTICS_CODE }}
     - name: "Deploy to AWS S3"
       run: aws s3 sync ./_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800
     - name: "Create AWS Cloudfront Invalidation"

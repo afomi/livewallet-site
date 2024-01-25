@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <script src="/assets/js/qrcode.min.js"></script>
   </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_code }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.google_analytics_code }}');
+  </script>
   <body>
 
     <div class="bg-white">
