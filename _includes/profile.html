@@ -1,0 +1,71 @@
+<div id="support-modal" class="relative z-10 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+  <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+      <div class="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-md sm:p-6">
+        <div>
+          <div class="mt-3 text-center sm:mt-5">
+            <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Support LiveWallet</h3>
+            <div class="mt-2">
+              <p class="text-sm text-gray-500">
+                <span class="text-gray-800">
+                  <a href="https://ryanwold.net" target="_blank">Ryan</a>
+                  created LiveWallet to introduce people to
+                  <span class="text-orange-400">bitcoin</span> through
+                  a hands-on experience.
+                </span>
+
+                <br>
+                <br>
+                <span class="text-gray-500 text-xs">
+                  Below is a public bitcoinsv (BSV) address where you can send satoshis
+                  to support this work.
+                  Add message text 💭 or an image 🖼️ in the tx if you're fancy.
+                </span>
+              </p>
+
+              <div class="flex text-center mt-6 mb-4">
+                <div id="qrcode" class="m-auto"></div>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <input id="copyInput" type="text"
+                  value="1J12o2k964mJPTuS53Un7oJ2Hxo5ksYf4L" class="text-sm font-mono border-2 border-gray-300 rounded-lg p-2 w-full" readonly disabled>
+
+                <button onclick="copyText()" class="bg-blue-500 hover:bg-blue-700 text-white text-xs py-2 px-4 rounded" title="copy">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5A3.375 3.375 0 0 0 6.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0 0 15 2.25h-1.5a2.251 2.251 0 0 0-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 0 0-9-9Z" />
+                </svg>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="mt-5 sm:mt-6">
+          <a href="javascript:toggleModal();" class="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            Close
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+new QRCode(document.getElementById("qrcode"), "1J12o2k964mJPTuS53Un7oJ2Hxo5ksYf4L");
+
+function toggleModal() {
+  var modal = document.getElementById('support-modal');
+  modal.classList.toggle('hidden');
+}
+
+function copyText() {
+  var copyText = document.getElementById("copyInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(copyText.value);
+}
+
+</script>
