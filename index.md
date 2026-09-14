@@ -223,8 +223,8 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
         class="mt-6 max-w-2xl text-lg/8 text-gray-600 sm:text-xl/8"
       >
         Start with a wallet, watch a payment arrive, then build and send a transaction yourself.
-        Each notebook covers one concept.
-        Run the Elixir code, change it, and see how the pieces fit together.
+        Each notebook covers one concept, and the notebooks are grouped into tracks.
+        Each track adds a layer to the one before it: keys, then transactions, then the things people build on top of them.
       </p>
     </div>
     <div
@@ -263,6 +263,9 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
             <li>
               Anyone can verify any transaction, and you did.
             </li>
+            <li>
+              Keys can be shared, split and time-locked, and a transaction can carry data as well as value.
+            </li>
           </ul>
           <a
             href="{{ notebook_base }}/table-of-contents.livemd"
@@ -278,9 +281,9 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
       <div
         class="mt-12 lg:col-span-8 lg:mt-0"
       >
-        <ol
+        <ul
           role="list"
-          class="flex flex-col gap-8 border-l border-gray-200 pl-6 sm:pl-8"
+          class="flex flex-col gap-10 border-l border-gray-200 pl-6 sm:pl-8"
         >
           <li>
             <p
@@ -317,166 +320,48 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
               Mainnet is an explicit opt-in: set a Livebook secret named <code>LB_NETWORK</code> to <code>main</code>.
               LiveWallet is experimental software that handles real keys; run it on your own machine and keep amounts under 1 USD.
             </p>
+            <p
+              class="mt-3 text-sm/6 text-gray-500"
+            >
+              There is no numbered order.
+              Each notebook says at the top what to do before it, works on its own, and ends with a Review cell that prints <code>PASS</code>.
+            </p>
           </li>
           <li>
             <p
               class="text-sm/6 font-medium text-gray-500"
             >
-              The core path <span aria-hidden="true">·</span> 30 minutes to 2 hours
+              Wallet <span aria-hidden="true">·</span> keys
             </p>
             <h3
               class="mt-1 text-lg/8 font-semibold text-gray-900"
             >
-              Five notebooks, one sitting
+              A wallet is a seed phrase and the keys it derives
             </h3>
             <p
               class="mt-2 text-base/7 text-gray-600"
             >
-              The solid arrows on the map.
-              Thirty minutes if you know Livebook, up to two hours if programming is new to you.
-            </p>
-            <ol
-              role="list"
-              class="mt-4 flex flex-col gap-3"
-            >
-              <li
-                class="flex items-start gap-3"
-              >
-                <span
-                  class="flex size-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-semibold text-orange-700"
-                  aria-hidden="true"
-                >
-                  1
-                </span>
-                <p
-                  class="text-base/7 text-gray-600"
-                >
-                  <a
-                    href="{{ notebook_base }}/wallet/seed-and-wallet.livemd"
-                    class="font-semibold text-gray-900 hover:text-orange-700"
-                  >Seed and Wallet</a>:
-                  generate a seed phrase and turn it into a wallet.
-                </p>
-              </li>
-              <li
-                class="flex items-start gap-3"
-              >
-                <span
-                  class="flex size-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-semibold text-orange-700"
-                  aria-hidden="true"
-                >
-                  2
-                </span>
-                <p
-                  class="text-base/7 text-gray-600"
-                >
-                  <a
-                    href="{{ notebook_base }}/wallet/keys-and-addresses.livemd"
-                    class="font-semibold text-gray-900 hover:text-orange-700"
-                  >Keys and Addresses</a>:
-                  derive many keys from one seed and make one reachable.
-                </p>
-              </li>
-              <li
-                class="flex items-start gap-3"
-              >
-                <span
-                  class="flex size-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-semibold text-orange-700"
-                  aria-hidden="true"
-                >
-                  3
-                </span>
-                <p
-                  class="text-base/7 text-gray-600"
-                >
-                  <a
-                    href="{{ notebook_base }}/transactions/receive.livemd"
-                    class="font-semibold text-gray-900 hover:text-orange-700"
-                  >Receive Bitcoin</a>:
-                  watch value arrive at an address you control.
-                </p>
-              </li>
-              <li
-                class="flex items-start gap-3"
-              >
-                <span
-                  class="flex size-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-semibold text-orange-700"
-                  aria-hidden="true"
-                >
-                  4
-                </span>
-                <p
-                  class="text-base/7 text-gray-600"
-                >
-                  <a
-                    href="{{ notebook_base }}/transactions/verify-on-chain.livemd"
-                    class="font-semibold text-gray-900 hover:text-orange-700"
-                  >Verify On-Chain</a>:
-                  read a transaction's inputs and outputs from the API.
-                </p>
-              </li>
-              <li
-                class="flex items-start gap-3"
-              >
-                <span
-                  class="flex size-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-semibold text-orange-700"
-                  aria-hidden="true"
-                >
-                  5
-                </span>
-                <p
-                  class="text-base/7 text-gray-600"
-                >
-                  <a
-                    href="{{ notebook_base }}/transactions/send.livemd"
-                    class="font-semibold text-gray-900 hover:text-orange-700"
-                  >Send a Transaction</a>:
-                  build, sign and broadcast by hand.
-                </p>
-              </li>
-            </ol>
-            <div
-              class="mt-6 border-t border-orange-200 pt-4"
-            >
-              <h4
-                class="text-base/7 font-semibold text-gray-900"
-              >
-                What will you build next?
-              </h4>
-              <p
-                class="mt-2 text-base/7 text-gray-600"
-              >
-                At this point, you'll have crafted a bitcoin transaction from scratch,
-                and <i>used</i> the bitcoin public ledger as an <i>information</i> and <i>value</i> network.
-              </p>
-              <p
-                class="mt-2 text-base/7 text-gray-800"
-              >
-                Go forth and discover new uses of bitcoin! 💫
-              </p>
-            </div>
-          </li>
-          <li>
-            <p
-              class="text-sm/6 font-medium text-gray-500"
-            >
-              Going deeper <span aria-hidden="true">·</span> optional, for builders
-            </p>
-            <h3
-              class="mt-1 text-lg/8 font-semibold text-gray-900"
-            >
-              Pieces you can reuse
-            </h3>
-            <p
-              class="mt-2 text-base/7 text-gray-600"
-            >
-              The dotted arrows on the map.
-              Do the core path once, then branch out.
+              You learn what a seed phrase, a seed, an extended key, a derivation path and an address are, by making each one.
+              Then how far a key can be shared: a public key, a watch-only key, a key that never touches the network.
             </p>
             <ul
               role="list"
               class="mt-4 flex flex-col gap-3 text-base/7 text-gray-600"
             >
+              <li>
+                <a
+                  href="{{ notebook_base }}/wallet/seed-and-wallet.livemd"
+                  class="font-semibold text-gray-900 hover:text-orange-700"
+                >Seed and Wallet</a>:
+                generate a seed phrase and turn it into a wallet.
+              </li>
+              <li>
+                <a
+                  href="{{ notebook_base }}/wallet/keys-and-addresses.livemd"
+                  class="font-semibold text-gray-900 hover:text-orange-700"
+                >Keys and Addresses</a>:
+                derive many keys from one seed and make one reachable.
+              </li>
               <li>
                 <a
                   href="{{ notebook_base }}/wallet/mnemonic-and-derivation.livemd"
@@ -491,6 +376,51 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
                 >Key Hierarchy</a>:
                 diagrams of what each layer of key can and cannot do.
               </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="text-sm/6 font-medium text-gray-500"
+            >
+              Transactions <span aria-hidden="true">·</span> value
+            </p>
+            <h3
+              class="mt-1 text-lg/8 font-semibold text-gray-900"
+            >
+              A transaction unlocks earlier outputs and locks new ones
+            </h3>
+            <p
+              class="mt-2 text-base/7 text-gray-600"
+            >
+              You learn what a UTXO, a txid, a confirmation and a fee are, by receiving bitcoin and reading it back from the chain.
+              Then you build a transaction by hand: locking script, unlocking script, signature, change, a memo in an OP_RETURN, and a broadcast.
+              Then a transaction that cannot be mined until a block height you choose.
+            </p>
+            <ul
+              role="list"
+              class="mt-4 flex flex-col gap-3 text-base/7 text-gray-600"
+            >
+              <li>
+                <a
+                  href="{{ notebook_base }}/transactions/receive.livemd"
+                  class="font-semibold text-gray-900 hover:text-orange-700"
+                >Receive Bitcoin</a>:
+                watch value arrive at an address you control.
+              </li>
+              <li>
+                <a
+                  href="{{ notebook_base }}/transactions/verify-on-chain.livemd"
+                  class="font-semibold text-gray-900 hover:text-orange-700"
+                >Verify On-Chain</a>:
+                read a transaction's inputs and outputs from the API.
+              </li>
+              <li>
+                <a
+                  href="{{ notebook_base }}/transactions/send.livemd"
+                  class="font-semibold text-gray-900 hover:text-orange-700"
+                >Send a Transaction</a>:
+                build, sign and broadcast by hand.
+              </li>
               <li>
                 <a
                   href="{{ notebook_base }}/transactions/order-lock.livemd"
@@ -498,6 +428,66 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
                 >Order Lock</a>:
                 a transaction that cannot be mined until a chosen block height.
               </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="text-sm/6 font-medium text-gray-500"
+            >
+              Tools <span aria-hidden="true">·</span> reading the chain
+            </p>
+            <h3
+              class="mt-1 text-lg/8 font-semibold text-gray-900"
+            >
+              The chain is public data you can query
+            </h3>
+            <p
+              class="mt-2 text-base/7 text-gray-600"
+            >
+              Not lessons, but utilities built from the pieces above.
+              Point them at addresses and transactions you care about.
+            </p>
+            <ul
+              role="list"
+              class="mt-4 flex flex-col gap-3 text-base/7 text-gray-600"
+            >
+              <li>
+                <a
+                  href="{{ notebook_base }}/tools/address-balance-viewer.livemd"
+                  class="font-semibold text-gray-900 hover:text-orange-700"
+                >Address Balance Viewer</a>:
+                watch many addresses at once.
+              </li>
+              <li>
+                <a
+                  href="{{ notebook_base }}/tools/ml-on-chain-data.livemd"
+                  class="font-semibold text-gray-900 hover:text-orange-700"
+                >ML on Chain Data</a>:
+                a machine-learning smart cell, to be pointed at on-chain text.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="text-sm/6 font-medium text-gray-500"
+            >
+              Governance <span aria-hidden="true">·</span> shared control
+            </p>
+            <h3
+              class="mt-1 text-lg/8 font-semibold text-gray-900"
+            >
+              More than one key, more than one person
+            </h3>
+            <p
+              class="mt-2 text-base/7 text-gray-600"
+            >
+              You learn what a multisig script and a partially signed transaction are, by running a signing ceremony.
+              Then what it takes for a wallet to be a function: a watch-only key, an idempotent signer, and nothing kept between calls.
+            </p>
+            <ul
+              role="list"
+              class="mt-4 flex flex-col gap-3 text-base/7 text-gray-600"
+            >
               <li>
                 <a
                   href="{{ notebook_base }}/governance/multisig-ceremony.livemd"
@@ -512,13 +502,6 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
                 >Serverless Wallet</a>:
                 a wallet shaped like a function.
               </li>
-              <li>
-                <a
-                  href="{{ notebook_base }}/tools/address-balance-viewer.livemd"
-                  class="font-semibold text-gray-900 hover:text-orange-700"
-                >Address Balance Viewer</a>:
-                watch many addresses at once.
-              </li>
             </ul>
           </li>
           <li>
@@ -530,171 +513,35 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
             <h3
               class="mt-1 text-lg/8 font-semibold text-gray-900"
             >
-              Not yet written
+              A satoshi can carry meaning as well as value
             </h3>
             <p
               class="mt-2 text-base/7 text-gray-600"
             >
               Create, read, transfer and burn, applied to inscriptions, on-chain posts, and assets held by old keys.
+              Not yet written.
             </p>
           </li>
-        </ol>
-      </div>
-    </div>
-
-    <div
-      id="start-here"
-      class="mt-20 max-w-4xl"
-      aria-labelledby="start-here-heading"
-    >
-      <p
-        class="text-sm/6 font-medium text-gray-500"
-      >
-        Read before you install
-      </p>
-      <h3
-        id="start-here-heading"
-        class="mt-1 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl"
-      >
-        The start page, as it appears in Livebook
-      </h3>
-      <p
-        class="mt-2 text-base/7 text-gray-600"
-      >
-        This is the prose and the map from
-        <a
-          href="{{ notebook_base }}/start-here.livemd"
-          class="text-orange-700 hover:text-orange-600"
-          target="_blank"
-          rel="noopener noreferrer"
-        >start-here.livemd</a>,
-        the notebook that Run in Livebook opens.
-      </p>
-      <div
-        class="mt-8 overflow-hidden rounded-xl bg-white ring-1 ring-gray-900/10"
-      >
+        </ul>
         <div
-          class="flex items-center gap-2 border-b border-gray-200 bg-gray-50 px-4 py-2 font-mono text-xs text-gray-500"
-        >
-          <span aria-hidden="true">📓</span>
-          start-here.livemd
-        </div>
-        <div
-          class="px-6 py-6 sm:px-8"
+          class="mt-10 border-t border-orange-200 pt-4"
         >
           <h4
-            class="text-lg/8 font-semibold text-gray-900"
+            class="text-base/7 font-semibold text-gray-900"
           >
-            What this is
+            What will you build next?
           </h4>
           <p
-            class="mt-3 text-base/7 text-gray-700"
+            class="mt-2 text-base/7 text-gray-600"
           >
-            <strong>Learn bitcoin by <i>using</i> bitcoin.</strong>
+            At this point, you'll have crafted a bitcoin transaction from scratch,
+            and <i>used</i> the bitcoin public ledger as an <i>information</i> and <i>value</i> network.
           </p>
           <p
-            class="mt-3 text-base/7 text-gray-700"
+            class="mt-2 text-base/7 text-gray-800"
           >
-            You make a wallet, receive some bitcoin, look it up, and send it on, all in small steps you can read and run yourself.
+            Go forth and discover new uses of bitcoin! 💫
           </p>
-          <p
-            class="mt-3 text-base/7 text-gray-700"
-          >
-            Each notebook focuses on one concept.
-            Each ends with a Review cell that prints <code>PASS</code> when it worked,
-            and leaves you with something real you can point at:
-            an address, a transaction, a message written on the blockchain.
-          </p>
-          <p
-            class="mt-3 text-base/7 text-gray-700"
-          >
-            Every notebook works on its own.
-            Open any one, run it from the top, and it works.
-            The "Before this" line at the top of each notebook says what to do first, and the map below draws those as arrows.
-          </p>
-          <blockquote
-            class="mt-4 border-l-4 border-amber-400 bg-amber-50 px-4 py-3 text-base/7 text-gray-800"
-          >
-            ⚠️ On mainnet you receive and send <strong>real bitcoin</strong>.
-            Keep it small, under 1 USD.
-            LiveWallet is for learning; it is not a wallet to keep money in.
-          </blockquote>
-          <h4
-            class="mt-8 text-lg/8 font-semibold text-gray-900"
-          >
-            The map
-          </h4>
-          <p
-            class="mt-3 text-base/7 text-gray-700"
-          >
-            Solid arrows are the path for a first sitting.
-            Dotted arrows are optional depth.
-            Dashed boxes are planned and not yet written.
-          </p>
-          <div
-            class="mt-4 overflow-x-auto rounded-lg border border-gray-200 bg-gray-50 p-4"
-          >
-<pre class="mermaid text-xs text-gray-700">
-flowchart TD
-  SH[start-here]
-
-  subgraph wallet
-    W1[wallet/seed-and-wallet]
-    W2[wallet/keys-and-addresses]
-    W3[wallet/mnemonic-and-derivation]
-    W4[wallet/key-hierarchy]
-  end
-
-  subgraph transactions
-    T1[transactions/receive]
-    T2[transactions/verify-on-chain]
-    T3[transactions/send]
-    T4[transactions/order-lock]
-  end
-
-  subgraph tools
-    U1[tools/address-balance-viewer]
-    U2[tools/ml-on-chain-data]
-  end
-
-  subgraph governance
-    G1[governance/multisig-ceremony]
-    G2[governance/serverless-wallet]
-  end
-
-  subgraph tokens
-    K1[tokens/script-envelopes]
-    K2[tokens/inscribe]
-    K3[tokens/recover-ordinals]
-    K4[tokens/transfer-and-burn]
-    K5[tokens/recover-twetch-posts]
-    K6[tokens/post-to-twetch-protocol]
-    K7[tokens/recover-relayx-jigs]
-    K8[tokens/provenance-tokens]
-  end
-
-  SH --> W1 --> W2 --> T1 --> T2 --> T3
-  W2 -.-> W3
-  W3 -.-> W4
-  T2 -.-> U1
-  T3 --> T4
-  T3 --> G1
-  W3 --> G1
-  T3 --> G2
-  T4 -.-> U2
-  T3 --> K1 --> K2
-  W3 --> K3
-  K2 --> K4
-  K3 --> K4
-  K3 --> K5 --> K6
-  K3 --> K7
-  K2 --> K7
-  T3 --> K8
-
-  classDef planned stroke-dasharray: 5 5
-  class K1,K2,K3,K4,K5,K6,K7,K8 planned
-</pre>
-          </div>
         </div>
       </div>
     </div>
@@ -780,7 +627,7 @@ flowchart TD
       <h2
         class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
       >
-        The last notebook has you send a transaction.
+        The last step in the tutorial has you send a transaction.
         Here is somewhere to send it.
       </h2>
       <p
@@ -805,7 +652,7 @@ flowchart TD
             class="text-base/7 text-gray-700"
           >
             <span class="font-semibold text-gray-900">Share it</span>
-            with a curious friend.
+            with a bitcoin-curious friend.
           </p>
         </li>
         <li
@@ -826,7 +673,7 @@ flowchart TD
               target="_blank"
               rel="noopener noreferrer"
             >Open an issue</a>
-            with what confused you.
+            with feedback or questions.
           </p>
         </li>
         <li
@@ -842,7 +689,7 @@ flowchart TD
             class="text-base/7 text-gray-700"
           >
             <span class="font-semibold text-gray-900">Send your first transaction here.</span>
-            The last notebook has you build a transaction by hand.
+            The last step in the tutorial has you build a transaction by hand.
             This address is a good place to send it.
             Anything you write in the memo stays on chain.
             A few thousand satoshis is plenty.
@@ -866,13 +713,3 @@ flowchart TD
 
 {% include profile.html %}
 
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.15.0/mermaid.min.js"
-></script>
-<script>
-  if (window.mermaid) {
-    mermaid.initialize({ startOnLoad: true, theme: "neutral" });
-  } else {
-    console.error("LiveWallet: mermaid did not load; the map is shown as source text.");
-  }
-</script>
