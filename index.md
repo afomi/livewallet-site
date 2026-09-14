@@ -761,7 +761,7 @@ flowchart TD
     </div>
     <div class="relative mt-16 h-[32rem] lg:mt-8 lg:h-[34rem]">
       <a href="/book/">
-        <img class="absolute left-0 top-0 w-[80rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="/assets/images/book-cta.png" alt="Learn Bitcoin by Using Bitcoin book preview" width="2432" height="1442" loading="lazy">
+        <img class="absolute left-0 top-0 w-[80rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10" src="/assets/images/book-cta.webp" alt="Learn Bitcoin by Using Bitcoin book preview" width="2432" height="1442" loading="lazy">
       </a>
     </div>
   </div>
