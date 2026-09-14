@@ -1,6 +1,13 @@
 ---
 ---
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source(none);
+
+/* jekyll-postcss passes no input filename, so sources are relative to the project root. */
+@source "./_drafts/**/*.{html,md}";
+@source "./_includes/**/*.html";
+@source "./_layouts/**/*.html";
+@source "./_posts/**/*.{html,md}";
+@source "./*.md";
+@source "./*.html";
+@source not "./settlement.html";

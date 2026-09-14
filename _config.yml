@@ -1,6 +1,8 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://livewallet.app"
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "LiveWallet"
+description: "Learn Bitcoin by using Bitcoin with LiveWallet, a hands-on Elixir Livebook tutorial for creating wallets and exploring the Bitcoin SV ledger."
+lang: "en-US"
 
 plugins:
   - jekyll-postcss
@@ -12,4 +14,3 @@ exclude:
   - package.json
   - package-lock.json
   - postcss.config.js
-  - tailwind.config.js
