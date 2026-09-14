@@ -14,3 +14,6 @@ exclude:
   - package.json
   - package-lock.json
   - postcss.config.js
+
+# The LiveWallet notebooks. Links on the homepage are built from this.
+livewallet_repo: "https://github.com/afomi/livewallet"
