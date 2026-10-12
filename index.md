@@ -584,7 +584,7 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
           <span aria-hidden="true">↗</span>
         </a>
         <a
-          href="/book/"
+          href="https://using-bitcoin.com/buy/"
           class="inline-flex items-center gap-1 text-sm/6 font-semibold text-stone-900 hover:text-orange-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900"
         >
           Buy the book
@@ -593,7 +593,7 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
       </div>
     </div>
     <div class="relative mt-16 h-[32rem] lg:mt-8 lg:h-[34rem]">
-      <a href="/book/">
+      <a href="https://using-bitcoin.com/buy/">
         <img class="absolute left-0 top-0 w-[80rem] max-w-none rounded-md ring-1 ring-stone-900/10" src="/assets/images/book-cta.webp" alt="Learn Bitcoin by Using Bitcoin book preview" width="2432" height="1442" loading="lazy">
       </a>
     </div>
