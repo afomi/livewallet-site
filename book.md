@@ -87,39 +87,28 @@ permalink: /book/
           </stripe-buy-button>
           </div>
 
-          <!-- Draft PDF -->
+          <!-- Read online -->
           <div
-            id="draft"
+            id="read"
             class="mt-10 rounded-lg bg-stone-100 p-5 ring-1 ring-stone-900/10"
           >
-            <div
-              class="flex items-baseline justify-between gap-4"
+            <h2
+              class="text-sm font-medium text-gray-900"
             >
-              <h2
-                class="text-sm font-medium text-gray-900"
-              >
-                Draft PDF
-              </h2>
-              <code
-                class="shrink-0 font-mono text-xs/6 text-gray-400"
-              >{{ site.data.book.date }} · {{ site.data.book.git_hash }}</code>
-            </div>
+              Read it free online
+            </h2>
             <p
               class="mt-3 text-sm/6 text-gray-600"
             >
-              {{ site.data.book.title }}, {{ site.data.book.pages }} pages, is available as a free draft while the printed book is in production.
-              Leave your email and the current draft arrives in your inbox, stamped with the date and version above.
-            </p>
-            <p
-              class="mt-3 text-sm/6 text-gray-500"
-            >
-              The download is not wired up yet.
-              Until it is, <a
-                href="https://github.com/afomi/livewallet/issues/new?title=Draft%20of%20Using%20Bitcoin"
+              The current draft is published chapter by chapter at
+              <a
+                href="https://using-bitcoin.com/"
                 class="font-semibold text-orange-700 hover:text-orange-600"
                 target="_blank"
                 rel="noopener noreferrer"
-              >open an issue</a> and a copy will be sent by hand.
+              >using-bitcoin.com <span aria-hidden="true">↗</span></a>,
+              under a Creative Commons license.
+              Buying the paperback keeps the drafts coming.
             </p>
           </div>
 

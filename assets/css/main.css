@@ -7,7 +7,6 @@
 @source "./_drafts/**/*.{html,md}";
 @source "./_includes/**/*.html";
 @source "./_layouts/**/*.html";
-@source "./_book/**/*.md";
 @source "./_plugins/**/*.rb";
 @source "./_posts/**/*.{html,md}";
 @source "./*.md";
@@ -18,52 +17,5 @@
 @layer components {
   #tutorial li[data-notebook].is-active {
     @apply bg-orange-100 ring-1 ring-orange-300;
-  }
-}
-
-/* The web edition of the book (_layouts/book.html). Plain markdown from tex2md.py. */
-@layer components {
-  .book-prose {
-    @apply text-base/7 text-gray-700;
-  }
-  .book-prose h1 {
-    @apply mt-1 mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl;
-  }
-  .book-prose h2 {
-    @apply mt-10 mb-3 text-xl font-semibold text-gray-900;
-  }
-  .book-prose h3 {
-    @apply mt-8 mb-2 text-base font-semibold text-gray-900;
-  }
-  .book-prose p {
-    @apply my-4;
-  }
-  .book-prose ul,
-  .book-prose ol {
-    @apply my-4 pl-6;
-  }
-  .book-prose ul {
-    @apply list-disc;
-  }
-  .book-prose ol {
-    @apply list-decimal;
-  }
-  .book-prose li {
-    @apply my-1;
-  }
-  .book-prose img {
-    @apply mx-auto mt-8 max-h-96 w-auto max-w-full;
-  }
-  .book-prose img + p {
-    @apply mt-2 text-center text-sm text-gray-500;
-  }
-  .book-prose code {
-    @apply rounded bg-gray-100 px-1 py-0.5 font-mono text-[0.9em] text-gray-800;
-  }
-  .book-prose a {
-    @apply text-orange-700 underline decoration-orange-300 underline-offset-2 hover:decoration-orange-600;
-  }
-  .book-prose strong {
-    @apply font-semibold text-gray-900;
   }
 }

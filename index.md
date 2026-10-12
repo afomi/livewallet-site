@@ -575,11 +575,13 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
         class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start"
       >
         <a
-          href="/book/#draft"
+          href="https://using-bitcoin.com/"
           class="rounded-md bg-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-orange-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Download the draft PDF
-          <span aria-hidden="true">→</span>
+          Read it free online
+          <span aria-hidden="true">↗</span>
         </a>
         <a
           href="/book/"
