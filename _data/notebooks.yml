@@ -1,0 +1,75 @@
+# The LiveWallet notebooks, one entry per .livemd file.
+# Mirrors ~/workspace/livewallet/table-of-contents.livemd: same order, same one-line descriptions.
+# `key` is the identifier the {% term %} tag and the TOC bullets share.
+
+- key: seed-and-wallet
+  track: wallet
+  path: wallet/seed-and-wallet.livemd
+  title: Seed and Wallet
+  description: generate a seed phrase and turn it into a wallet.
+
+- key: keys-and-addresses
+  track: wallet
+  path: wallet/keys-and-addresses.livemd
+  title: Keys and Addresses
+  description: derive many keys from one seed and make one reachable.
+
+- key: mnemonic-and-derivation
+  track: wallet
+  path: wallet/mnemonic-and-derivation.livemd
+  title: Mnemonic and Derivation
+  description: passphrases, hardened paths, watch-only keys.
+
+- key: key-hierarchy
+  track: wallet
+  path: wallet/key-hierarchy.livemd
+  title: Key Hierarchy
+  description: diagrams of what each layer of key can and cannot do.
+
+- key: receive
+  track: transactions
+  path: transactions/receive.livemd
+  title: Receive Bitcoin
+  description: watch value arrive at an address you control.
+
+- key: verify-on-chain
+  track: transactions
+  path: transactions/verify-on-chain.livemd
+  title: Verify On-Chain
+  description: read a transaction's inputs and outputs from the API.
+
+- key: send
+  track: transactions
+  path: transactions/send.livemd
+  title: Send a Transaction
+  description: build, sign and broadcast by hand.
+
+- key: order-lock
+  track: transactions
+  path: transactions/order-lock.livemd
+  title: Order Lock
+  description: a transaction that cannot be mined until a chosen block height.
+
+- key: address-balance-viewer
+  track: tools
+  path: tools/address-balance-viewer.livemd
+  title: Address Balance Viewer
+  description: watch many addresses at once.
+
+- key: ml-on-chain-data
+  track: tools
+  path: tools/ml-on-chain-data.livemd
+  title: ML on Chain Data
+  description: a machine-learning smart cell, to be pointed at on-chain text.
+
+- key: multisig-ceremony
+  track: governance
+  path: governance/multisig-ceremony.livemd
+  title: Multisig Ceremony
+  description: two of three keys, held by three people, spend together.
+
+- key: serverless-wallet
+  track: governance
+  path: governance/serverless-wallet.livemd
+  title: Serverless Wallet
+  description: a wallet shaped like a function.

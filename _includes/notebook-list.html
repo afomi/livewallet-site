@@ -1,0 +1,28 @@
+{% comment %}
+  The notebooks of one track, from _data/notebooks.yml.
+  Usage: {% include notebook-list.html track="wallet" %}
+  Each bullet carries data-notebook="<key>" so a `term` tag link in the prose can highlight it.
+{% endcomment %}
+{% assign track_notebooks = site.data.notebooks | where: "track", include.track %}
+<ul
+  role="list"
+  class="mt-4 flex flex-col gap-3 text-base/7 text-gray-600"
+>
+  {% for notebook in track_notebooks %}
+  <li
+    data-notebook="{{ notebook.key }}"
+    class="-mx-2 flex flex-col gap-1 rounded-md px-2 transition-colors sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
+  >
+    <span>
+      <a
+        href="{{ site.livewallet_repo }}/blob/main/{{ notebook.path }}"
+        class="font-semibold text-gray-900 hover:text-orange-700"
+      >{{ notebook.title }}</a>:
+      {{ notebook.description }}
+    </span>
+    <code
+      class="shrink-0 font-mono text-xs/6 text-gray-400"
+    >{{ notebook.path | split: "/" | last }}</code>
+  </li>
+  {% endfor %}
+</ul>

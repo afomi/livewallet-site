@@ -126,7 +126,7 @@ permalink: /book/
                 Learn about the history, technology, operations, economics, and implications of bitcoin.
               </p>
               <p class="mt-3 text-gray-800">
-                Each purchased book comes with $15* of usable bsv bitcoin.
+                Each purchased book comes with $10* of usable bsv bitcoin.
                 Coins are purchased at market prices when the order is processed, not when the order is placed.
                 <span class="text-gray-400 text-xs">
                   (Coin price is approximate, based on time of purchase. Exceptions apply during high volatility.)
