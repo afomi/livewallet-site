@@ -53,9 +53,10 @@ description: "Learn Bitcoin by using Bitcoin. Run the LiveWallet Elixir Livebook
         </p>
       </div>
       <h1
-        class="mt-8 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl md:text-4xl lg:text-5xl xl:text-6xl"
+        class="mt-8 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl md:text-4xl lg:text-5xl xl:text-6xl"
       >
-        Learn about bitcoin
+        <span class="whitespace-nowrap">Learn about bitcoin</span>
+        <br>
         by <i>using</i> bitcoin.
       </h1>
       <p
