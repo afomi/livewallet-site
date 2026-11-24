@@ -4,7 +4,7 @@
   "description": "jekyll with tailwind to s3 via github actions",
   "main": "postcss.config.js",
   "dependencies": {
-    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/postcss": "^4.3.5",
     "postcss": "^8.5.28",
     "tailwindcss": "^4.3.3"
   },
